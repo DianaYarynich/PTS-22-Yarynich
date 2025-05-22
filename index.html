@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Exclusive Electronics Store – your one-stop shop for smartphones 📱, smartwatches ⌚, appliances 🏠, and more. Enjoy up to 40% off 🔥, fast delivery 🚚, and top-rated products ⭐. Shop smart and save! 💰"
+      content="Exclusive Electronics Store – your shop for electronics 🖥️, appliances 🏠, and more. Enjoy up to 40% off 🔥, fast delivery 🚚, and top-rated products ⭐."
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link rel="apple-touch-icon" href="/media/icons8-apple-inc.svg" />
     <link rel="stylesheet" href="styles.css" />
 
     <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon" />
 
     <title>EXCLUSIVE — Your Trusted Tech Store</title>
   </head>
+  <script>
+  if (location.hostname.startsWith("www.")) {
+      window.location.replace(location.protocol + "//" + location.hostname.replace("www.", "") + location.pathname + location.search + location.hash);
+    }
+  </script>
   <body>
     <header>
       <div class="sale-div">
@@ -32,15 +38,15 @@
           <span></span>
         </div>
         <div class="logo">
-          <a href="">
+          <a href="/">
             <img src="media/exclusive.png" alt="Exclusive" title="Exclusive" />
           </a>
         </div>
         <div class="buttons">
           <ul>
-            <li class="button"><a href="">Home</a></li>
-            <li class="button"><a href="">Contact</a></li>
-            <li class="button"><a href="">About</a></li>
+            <li class="button"><a href="/">Home</a></li>
+            <li class="button"><a href="#form-container">Contact</a></li>
+            <li class="button"><a href="#about-us">About</a></li>
             <li class="button"><a href="">Sign Up</a></li>
           </ul>
         </div>
@@ -52,10 +58,10 @@
             </button>
           </div>
           <div class="icon-group">
-            <a href="#" class="icon"><i class="fa-solid fa-heart"></i></a>
-            <a href="#" class="icon"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
+            <button class="icon"><i class="fa-solid fa-heart"></i></button>
+            <button class="icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -77,7 +83,12 @@
       </aside>
       <div class="full-width">
         <section class="hero-background">
-          <h1 style="color: white">Welcome To Exclusive Store</h1>
+          <h1 style="color: white">Exclusive Store</h1>
+          <p style="color: white; margin-top: 1em">
+            Welcome to <strong>Exclusive Store</strong>, your trusted tech store
+            for the latest electronics, gadgets, and accessories. Discover why
+            so many customers choose Exclusive for quality, value, and service.
+          </p>
         </section>
       </div>
 
@@ -1014,7 +1025,7 @@
         </iframe>
       </section>
 
-      <div class="about-us">
+      <div id="about-us" class="about-us">
         <section class="about-us-section">
           <div>
             <div class="i-image">
@@ -1040,8 +1051,8 @@
         </section>
       </div>
 
-      <div class="form-container">
-        <h1>Have Any Questions?</h1>
+      <div id="form-container" class="form-container">
+        <h2>Have Any Questions?</h2>
         <form class="form">
           <fieldset>
             <legend>Contact Us</legend>
@@ -1094,7 +1105,6 @@
     <footer>
       <div class="info">
         <div class="info-box">
-          <!-- <h1>Exclusive</h1> -->
           <h2>Subscribe</h2>
           <p>Get 10% off your first order</p>
           <div class="search-box search-footer">
@@ -1141,10 +1151,10 @@
               <img src="media/qr-code.png" alt="QR-Code" />
             </div>
             <div class="right-link">
-              <a href="" rel="nofollow">
+              <a href="https://play.google.com/" rel="nofollow">
                 <img src="media/playmarket.png" alt="PlayMarket" />
               </a>
-              <a href="" rel="nofollow">
+              <a href="https://www.apple.com/app-store/" rel="nofollow">
                 <img src="media/appstore.svg" alt="AppStore" />
               </a>
             </div>
@@ -1171,3 +1181,4 @@
     <script src="script.js"></script>
   </body>
 </html>
+
