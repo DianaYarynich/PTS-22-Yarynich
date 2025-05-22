@@ -377,6 +377,7 @@ header .logo img {
 }
 
 .product-image-container img {
+  min-height: 175px;
   width: 100%;
   height: auto;
   display: block;
@@ -1529,4 +1530,27 @@ form input {
   .hero-background>p {
     max-width: 400px;
   }
+}
+
+h1{
+  color: white;
+}
+
+.hero-background > p{
+  color: white; 
+  margin-top: 1em;
+}
+
+iframe{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.search-btn > i{
+  color: #fff;
 }
