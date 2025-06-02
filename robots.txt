@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dianayarynich.github.io/PTS-22-Yarynich/sitemap.xml
